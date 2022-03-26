@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddeedd;
+}
+
+main {
+  width: 210px;
+  height: 540px;
+}
+
+/* 设置文字的的样式 */
+#text {
+  width: 210px;
+  height: 150px;
+  text-align: center;
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 中间内容区的样式 */
+main,
+#container,
+.inst-arrow-left,
+.inst-arrow-down,
+.inst-arrow-right {
+  /* 水平垂直居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  height: 360px;
+  width: 210px;
+  overflow: hidden;
+  border: 4px solid #333;
+}
+
+table {
+  height: 540px;
+  width: 210x;
+  /* 相邻单元格公用一条线 */
+  border-collapse: collapse;
+  position: relative;
+  top: -96px;
+  left: 0;
+}
+
+td {
+  /* border: 1px solid #333; */
+  
+  border-left:1px solid #333;
+  border-right:1px solid #333;
+  height: 90px;
+  width: 70px;
+}
+
+/* 游戏说明样式 */
+#instructions {
+  width: 210px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#instructions > .arrow > div {
+  float: left;
+  width: 70px;
+  height: 90px;
+  position: relative;
+  top: 360px;
+}
+
+#instructions .arrow .arrow-img {
+  display: block;
+  width: 30px;
+}
+
+.inst-arrow-left {
+  transform: rotate(-90deg) translateY(-50%) translateX(50%);
+}
+
+.inst-arrow-right {
+  transform: rotate(90deg) translateY(50%) translateX(-50%);
+}
+
+.inst-arrow-down {
+  transform: rotate(180deg) translateY(50%) translateX(50%);
+}
+
+/* 黑色方块的 CSS 样式 */
+.test1,
+.test2,
+.test3 {
+  width: 67px;
+  height: 88px;
+  display: table-cell;
+  position: absolute;
+  top: -92px;
+  background-color: #000;
+}
+
+.test1 {
+  left: 0%;
+}
+
+.test2 {
+  left: 33.33%;
+}
+
+.test3 {
+  left: 66.66%;
+}
+
+#button {
+  position: absolute;
+  width: 210px;
+  height: 50px;
+}
+
+#gameStart,
+#gameEnd {
+  margin: 520px 15px;
+}

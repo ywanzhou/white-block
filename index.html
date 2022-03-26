@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>别踩白块儿</title>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- 计时器和分数 -->
+      <div id="text">
+        <h2>别踩白块儿</h2>
+
+        <p>分数 : <stan id="span">0</stan></p>
+        <!-- <p>时间 : <span>0</span></p> -->
+      </div>
+      <!-- 中间白块区域 -->
+      <div id="container">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div id="instructions">
+        <div class="arrow">
+          <div>
+            <img class="arrow-img inst-arrow-left" src="./imgs/direction.png" />
+          </div>
+          <div>
+            <img class="arrow-img inst-arrow-down" src="./imgs/direction.png" />
+          </div>
+          <div>
+            <img
+              class="arrow-img inst-arrow-right"
+              src="./imgs/direction.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="button">
+        <button id="gameStart">游戏开始</button>
+        <button id="gameEnd">游戏结束</button>
+      </div>
+    </main>
+    <script src="./behavior.js"></script>
+  </body>
+</html>
